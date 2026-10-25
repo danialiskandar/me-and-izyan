@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Us 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="locked">
+  <div class="login" id="login">
+    <form id="loginForm" autocomplete="off">
+      <div class="login-heart">♥</div>
+      <h1>Welcome</h1>
+      <p>Only for the two of us</p>
+      <input id="loginUser" type="text" placeholder="Username" autocapitalize="none" autocorrect="off" required>
+      <input id="loginPass" type="password" placeholder="Password" required>
+      <button type="submit">Open</button>
+      <p class="login-error" id="loginError" hidden>Oops, that's not right. Try again 💔</p>
+    </form>
+  </div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="hero-small">This is our sweet space</p>
+    <h1 id="names"></h1>
+    <p class="tagline" id="tagline"></p>
+    <a class="scroll" href="#counter" aria-label="Scroll down">♥</a>
+  </header>
+
+  <section id="counter" class="section reveal">
+    <h2>Together for</h2>
+    <div class="counter" id="counterBox">
+      <div><span id="cDays">0</span><small>days</small></div>
+      <div><span id="cHours">0</span><small>hours</small></div>
+      <div><span id="cMins">0</span><small>minutes</small></div>
+      <div><span id="cSecs">0</span><small>seconds</small></div>
+    </div>
+  </section>
+
+  <section id="story" class="section">
+    <h2>Our Significant Moments</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>And of course every moment with you is significant to me...</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="reasons" class="section">
+    <h2>A Letter For You</h2>
+    <p class="hint" id="hint">Tap the heart to open</p>
+    <button class="envelope" id="envelope" aria-expanded="false" aria-controls="letter" aria-label="Open the letter">♥</button>
+    <div class="letter" id="letter" hidden></div>
+  </section>
+
+  <footer>Made with <span class="beat">♥</span> just for you</footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="close" aria-label="Close">&times;</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  </div>
+
+  <script src="login.js?v=1"></script>
+  <script src="config.js?v=3"></script>
+  <script src="script.js?v=3"></script>
+</body>
+</html>
